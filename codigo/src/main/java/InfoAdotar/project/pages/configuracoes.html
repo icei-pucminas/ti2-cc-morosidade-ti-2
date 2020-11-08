@@ -63,20 +63,36 @@
                 <h1>Configurações</h1>
             </div>
             <div id="perfilConfig" class="col-12">
-                <h1>
-                    Perfil
-                </h1>
-                <h3>
-                    <button type="button" class="btn  btn-simple" data-toggle="modal" data-target="#alterarNome">
-                        Alterar nome
-                      </button>
-                </h3>
-                <h3>
-                    <button type="button" class="btn  btn-simple" data-toggle="modal" data-target="#alterarSenha">
-                        Senha
-                      </button>
-                </h3>
+               <form id="loginForm " class="form--register"
+				action="http://localhost:6789/inserir" method="post"
+				id="form-add">
+                <div class="form-head-div">
+                    <h2>Cadastro</h2>
+                </div>
+               
                 
+                    
+                    <p>Nome:</p>
+                    <input id="cadastroNome" name="Nome" class="form-control" type="name" required>
+                    <p>Idade:</p>
+                    <input id="cadastroIdade" name="idade" class="form-control" type="number" required>
+                    <p>Renda:</p>
+                    <input id="cadastroRenda" name="renda" class="form-control" type="number" required>
+                    <p>Disponibilidade:</p>
+                    <input id="cadastroDisponibilidade" name="disponibilidade" class="form-control" type="number" required>
+                    <p>Email:</p>
+                    <input id="cadastroEmail" name="email" class="form-control" type="email" required>
+                    <p>sexo</p>
+				    <input id="cadastroSexo" class="input--register" type="text" name="sex" value="" placeholder="m"> 
+                 
+                
+               
+                
+                    <input type="submit" class="input--main__style input--button" id="btncadastrar" value="cadastrar" >
+                      
+			
+                
+            </form>
 
 
             </div>

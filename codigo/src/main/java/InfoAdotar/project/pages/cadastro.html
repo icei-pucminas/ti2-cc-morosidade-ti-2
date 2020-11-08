@@ -29,6 +29,16 @@
     <script src="../js/pages/cadastro.js"></script>
 
 </head>
+<script type="text/javascript">
+
+function addIdToPath(form_name, base_url){
+    var your_form = document.getElementById(form_name);
+	var id = your_form.elements.namedItem("id").value;
+	action_src = base_url + id;
+	your_form.action = action_src;
+}
+
+</script>
 
 <body>
     <main>
@@ -37,34 +47,37 @@
             <h1>meAdote</h1>
         </div>
         <div id="loginCard">
-            <form id="loginForm">
+            <form id="loginForm " class="form--register"
+				action="http://localhost:6789/inserir" method="post"
+				id="form-add">
                 <div class="form-head-div">
                     <h2>Cadastro</h2>
                 </div>
-                <div class="form-data-div form-group">
-                    <label for="cadastroCPF">CPF(Apenas números):</label>
-                    <input id="cadastroCPF" name="CPF" class="form-control" type="text" required>
-                    <label for="cadastroNome">Nome Completo:</label>
-                    <input id="cadastroNome" name="Nome" class="form-control" type="name" required>
-                    <label for="cadastroIdade">Idade:</label>
-                    <input id="cadastroIdade" name="idade" class="form-control" type="number" required>
-                    <label for="cadastroRenda">Renda Média Mensal:</label>
-                    <input id="cadastroRenda" name="renda" class="form-control" type="number" required>
-                    <label for="cadastroDisponibilidade">Disponibilidade para cuidar da criança(Em horas):</label>
-                    <input id="cadastroDisponibilidade" name="disponibilidade" class="form-control" type="number" required>
-                    <label for="cadastroEmail">E-mail:</label>
-                    <input id="cadastroEmail" name="email" class="form-control" type="email" required>
-                    <label for="cadastroPassword">Senha:</label>
-                    <input id="cadastroPassword" name="password" class="form-control" type="password" required>
-                    <label for="cadastroConfirmPassword">Confirme a senha:</label>
-                    <input id="cadastroConfirmPassword" name="confirmpassword" class="form-control" type="password" required>
-                </div>
-                <div class="form-action-div">
+               
                 
-                    <button type="submit" class="btn btn-outline-light" id="btncadastrar" >
-                        Cadastrar
-                    </button>
-                </div>
+                    
+                    <p>Nome:</p>
+                    <input id="cadastroNome" name="Nome" class="form-control" type="name" required>
+                    <p>Idade:</p>
+                    <input id="cadastroIdade" name="idade" class="form-control" type="number" required>
+                    <p>Renda:</p>
+                    <input id="cadastroRenda" name="renda" class="form-control" type="number" required>
+                    <p>Disponibilidade:</p>
+                    <input id="cadastroDisponibilidade" name="disponibilidade" class="form-control" type="number" required>
+                    <p>Email:</p>
+                    <input id="cadastroEmail" name="email" class="form-control" type="email" required>
+                    <p>sexo</p>
+				    <input id="cadastroSexo" class="input--register" type="text" name="sex" value="" placeholder="m"> 
+                    <p>Senha:</p>
+                    <input id="cadastroPassword" name="password" class="form-control" type="password" required>
+                    <p>Confirme Senha:</p>
+                    <input id="cadastroConfirmPassword" name="Confirmpassword" class="form-control" type="password" required>
+                   
+                
+                    <input type="submit" class="input--main__style input--button" id="btncadastrar" value="cadastrar" >
+                      
+			
+                
             </form>
         </div>
     </main>

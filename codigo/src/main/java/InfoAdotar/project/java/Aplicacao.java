@@ -22,7 +22,13 @@ public class Aplicacao {
         get("/adocao/delete/:id", (request, response) -> adocao.remove(request, response));
 
         get("/usuario", (request, response) -> adocao.getAll(request, response));
-        
+
+        post("/login", (request, response) -> adocao.login(request, response));
+
+        get("/hello", (request, response)->"Hello, world,java");
+
+    
+   	
         
         
     }

@@ -54,15 +54,15 @@ public class AdocaoDAO {
 	}
 	
 	public boolean inserirUsuario(Adocao adocao) {
-		System.out.println(adocao);
+		
 		boolean status = false;
 		try {  
 			Statement st = conexao.createStatement();
-			st.executeUpdate("INSERT INTO usuarios (id,nome,idade,renda,disponibilidade,email,sexo) "
+			st.executeUpdate("INSERT INTO usuarios (id,nome,idade,renda,disponibilidade,email,sexo,senha) "
 					       + "VALUES ("+ adocao.getId() + ", '" + adocao.getNome() + "', "  
 					       + adocao.getIdade() +"," + adocao.getRenda()+ ", " 
 					       + adocao.getDisponibilidade() + ", '" +adocao.getEmail() + "', '"
-					       + adocao.getSexo() + "');");
+					       + adocao.getSexo() + "', '" +adocao.getSenha() +  "');");
 			st.close();
 			status = true;
 		} catch (SQLException u) {  
@@ -70,14 +70,14 @@ public class AdocaoDAO {
 		}
 		return status;
 	}
-	
 	public boolean atualizarUsuario(Adocao adocao) {
 		boolean status = false;
 		try {  
 			Statement st = conexao.createStatement();
 			String sql = "UPDATE jogador SET nome = '" + adocao.getNome() + "', idade = '"  
 				       + adocao.getIdade() + "',renda='"+ adocao.getRenda() + "', disponibilidade = '" + adocao.getDisponibilidade() + "', email = '"  
-					   + adocao.getEmail() + "', sexo = '"  + adocao.getSexo() + "'"
+					   + adocao.getEmail() + "', sexo = '"  + adocao.getSexo() + "', email = '"  
+							   + adocao.getSenha() +  "'"
 					   + " WHERE id = " + adocao.getId();
 			st.executeUpdate(sql);
 			st.close();
@@ -116,7 +116,7 @@ public class AdocaoDAO {
 	             
 	             for(int i = 0; rs.next(); i++) {
 	                adocao[i] = new Adocao(rs.getInt("id"), rs.getString("nome"), 
-	                		                  rs.getInt("idade"),rs.getInt("renda"),rs.getInt("disponibilidade"),rs.getString("email"), rs.getString("sexo").charAt(0));
+	                		                  rs.getInt("idade"),rs.getInt("renda"),rs.getInt("disponibilidade"),rs.getString("email"), rs.getString("sexo").charAt(0),rs.getString("senha"));
 	                
 	             }
 	          
@@ -128,6 +128,7 @@ public class AdocaoDAO {
 		}
 		return adocao;
 	}
+
 	  public int getMaxId() {
 		  Adocao[] adocao = getUsuario();
 		  int maior=adocao[0].getId();
@@ -136,7 +137,7 @@ public class AdocaoDAO {
 				   maior=adocao[i].getId();
 			  }
 		  }
-		  
+		  	
 		  
 			return maior;
 		}
@@ -146,7 +147,7 @@ public class AdocaoDAO {
 		
 		try {
 			Statement st = conexao.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
-			ResultSet rs = st.executeQuery("SELECT FROM usuarios WHERE id = " + id);		
+			ResultSet rs = st.executeQuery("SELECT * FROM usuarios WHERE id = " + id);		
 	         if(rs.next()){
 	             rs.last();
 	             adocao = new Adocao[rs.getRow()];
@@ -155,7 +156,7 @@ public class AdocaoDAO {
 	             for(int i = 0; rs.next(); i++) {
 	            	if(adocao[i].getId()==id) {
 	                adocao[i] = new Adocao(rs.getInt("id"), rs.getString("nome"), 
-	                		                  rs.getInt("idade"),rs.getInt("renda"),rs.getInt("disponibilidade"),rs.getString("email"), rs.getString("sexo").charAt(0));
+	                		                  rs.getInt("idade"),rs.getInt("renda"),rs.getInt("disponibilidade"),rs.getString("email"), rs.getString("sexo").charAt(0),rs.getString("senha"));
 	                alo = adocao[i];
 	            	}
 	             }
@@ -182,7 +183,7 @@ public class AdocaoDAO {
 
 	             for(int i = 0; rs.next(); i++) {
 		                adocao[i] = new Adocao(rs.getInt("id"), rs.getString("nome"), 
-      		                  rs.getInt("idade"),rs.getInt("renda"),rs.getInt("disponibilidade"),rs.getString("email"), rs.getString("sexo").charAt(0));
+      		                  rs.getInt("idade"),rs.getInt("renda"),rs.getInt("disponibilidade"),rs.getString("email"), rs.getString("sexo").charAt(0),rs.getString("senha"));
 	             }
 	          }
 	          st.close();
@@ -191,4 +192,28 @@ public class AdocaoDAO {
 		}
 		return adocao;
 	}
+	public Adocao getLogin(String email , String senha) {
+		Adocao[] adocao = null;
+		Adocao alo=null;
+		try {
+			Statement st = conexao.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+			ResultSet rs = st.executeQuery("SELECT * FROM usuarios WHERE email = '" + email + "' AND senha ='" + senha + "'");		
+	         if(rs.next()){
+	             rs.last();
+	             adocao = new Adocao[rs.getRow()];
+	             rs.beforeFirst();
+
+	             for(int i = 0; rs.next(); i++) {
+		                adocao[i] = new Adocao(rs.getInt("id"), rs.getString("nome"), 
+      		                  rs.getInt("idade"),rs.getInt("renda"),rs.getInt("disponibilidade"),rs.getString("email"), rs.getString("sexo").charAt(0),rs.getString("senha"));
+		                alo= adocao[i];
+	             }
+	          }
+	          st.close();
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
+		}
+		return alo;
+	}
+	
 }

@@ -75,7 +75,8 @@ $(document).ready(function () {
             $("#loginFormEmail").val().toLowerCase(),
             $("#loginFormPassword").val(),
             function () {
-                window.location.href = "home.html"
+                
+				window.open("home.html","_blank");
             },
             function (msg) {
                 alert(msg);

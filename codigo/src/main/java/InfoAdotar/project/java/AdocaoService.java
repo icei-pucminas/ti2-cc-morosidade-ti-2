@@ -3,6 +3,8 @@ package InfoAdotar.project.java;
 
 
 
+import org.json.JSONArray;
+
 import spark.Request;
 import spark.Response;
 
@@ -30,18 +32,20 @@ public class AdocaoService {
 		String disponibilidade=a[3].split("=")[1];
 		String email1= a[4].split("=")[1];
 		String sexo= a[5].split("=")[1];
+		String senha=a[6].split("=")[1];
 		
 		int id = adocaoDAO.getMaxId() + 1;
 		String email= "";
         for(int i =0 ; i<email1.length();i++) {
         	if(email1.charAt(i)=='%' && email1.charAt(i+1)=='4' && email1.charAt(i+2)=='0') {
         		email+='@';
+        		i++;i++;
         	}else {
         		email+=email1.charAt(i);
         	}
         }
         
-		Adocao adocao = new Adocao(id, nome, Integer.parseInt(idade),Integer.parseInt(renda), Integer.parseInt(disponibilidade), email,sexo.charAt(0));
+		Adocao adocao = new Adocao(id, nome, Integer.parseInt(idade),Integer.parseInt(renda), Integer.parseInt(disponibilidade), email,sexo.charAt(0),senha);
 
 		adocaoDAO.inserirUsuario(adocao);
 
@@ -50,6 +54,7 @@ public class AdocaoService {
 		return id;
 		
 	}
+
 
 	public Object get(Request request, Response response) {
 		adocaoDAO.conectar();
@@ -69,6 +74,7 @@ public class AdocaoService {
             		"\t<disponibilidade> " + Adocao.getDisponibilidade() + "</disponibilidade>\n" +
             		"\t<email> " + Adocao.getEmail() + "</email>\n" +
             		"\t<sexo> " + Adocao.getSexo() + "</sexo>\n" +
+            		"\t<senha>" + Adocao.getSenha() + "</senha>\n" +
             		"</adocao>\n";
         } else {
             response.status(404); // 404 Not found
@@ -91,6 +97,7 @@ public class AdocaoService {
         	adocao.setDisponibilidade(Integer.parseInt(request.queryParams("disp")));
         	adocao.setEmail(request.queryParams("email"));
         	adocao.setSexo(request.queryParams("sexo").charAt(0));
+        	adocao.setSenha(request.queryParams("senha"));
         	
 
         	adocaoDAO.atualizarUsuario(adocao);
@@ -120,7 +127,7 @@ public class AdocaoService {
         } else {
             response.status(404); // 404 Not found
             adocaoDAO.close();
-            return "Bem de consumo não encontrado.";
+            return "Usuario nao encontrado.";
         }
 	}
 
@@ -137,6 +144,7 @@ public class AdocaoService {
             		"\t<disponibilidade> " + adocao1.getDisponibilidade() + "</disponibilidade>\n" +
             		"\t<email> " + adocao1.getEmail() + "</email>\n" +
             		"\t<sexo> " + adocao1.getSexo() + "</sexo>\n" +
+            		"\t<senha>" + adocao1.getSenha() + "</senha>\n" +
             		"</adocao>\n");
 		}
 		returnValue.append("</adocao>");
@@ -145,6 +153,31 @@ public class AdocaoService {
 	    adocaoDAO.close();
 		return returnValue.toString();
 
+	} 
+	public Object login(Request request , Response response) {
+		adocaoDAO.conectar();
+		response.header("Content-Type", "application/json");
+	    response.header("Content-Encoding", "UTF-8");
+		JSONArray allProds = new JSONArray();
+		String a[]= request.body().split("&");
+		String email1= a[0].split("=")[1];
+		String senha=a[1].split("=")[1];
+		String email= "";
+        for(int i =0 ; i<email1.length();i++) {
+        	if(email1.charAt(i)=='%' && email1.charAt(i+1)=='4' && email1.charAt(i+2)=='0') {
+        		email+='@';
+        		i++;i++;
+        	}else {
+        		email+=email1.charAt(i);
+        	}
+        }
+        Adocao login=adocaoDAO.getLogin(email, senha);
+        allProds.put(login.toJson());
+		adocaoDAO.close();
+		return allProds;
+		
 	}
+
+	
 
 }

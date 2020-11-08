@@ -11,7 +11,7 @@ function NovoUsuario() {
     
     if(idade<18){
         alert("Você não tem idade para adotar!");
-    }else{
+    }else{ 
         
     let nome = $("#cadastroNome").val();
     let email = $("#cadastroEmail").val();
@@ -22,9 +22,9 @@ function NovoUsuario() {
 
         userController.create(cadastraUsuario,
             function () {
-                alert("Cadastro realizado com sucesso!");
-                event.preventDefault('#loginForm');
-                window.location.href = "index.html"
+				alert("Cadastro realizado com sucesso!");
+				window.open("index.html","_blank");
+	            
             
             },
             function (msg) {
