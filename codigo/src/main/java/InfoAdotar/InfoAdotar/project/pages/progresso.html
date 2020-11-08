@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meAdote - InfoAjudar</title>
+
+    <!--JQuery-->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pages/infoAjudar.css" />
+
+    <!--JavaScript-->
+    <script src="../js/util/util.js"></script>
+    <script src="../js/dal/dal.js"></script>
+    <script src="../js/controller/userController.js"></script>
+    <script src="../js/controller/faqController.js"></script>
+    <script src="../js/controller/passoController.js"></script>
+    <script src="../js/controller/userPassoController.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/pages/infoAjudar.js"></script>
+    <script src="../js/pages/progresso.js"></script>
+    <script src="../js/progresso.js"></script>
+
+</head>
+
+<body onload="desabilitar()">
+    <header id="pageHeader">
+        <button class="menu-toggle btn btn-outline-light">
+            <img src="../img/open-menu.png">
+        </button>
+        <h1>InfoAjudar</h1>
+    </header>
+    <div id="pageConternt">
+        <div id="menu">
+            <section class="menu-item">
+                <div class="profile-card">
+                    <a href="#"><img class="profile-pic" src="../img/profile.png"/></a>
+                    <h2 id="profileName"></h2>
+                </div>
+            </section>
+            <section class="menu-item">
+                <nav id="menuNav">
+                    <a href="home.html">Home</a>
+                    <a href="InfoAdotar.html">InfoAdotar</a>
+                    <a href="infoAjudar.html">InfoAjudar</a>
+                    <a href="comunidade.html">Comunidade</a>
+                </nav>
+            </section>
+            <section class="menu-item">
+
+            </section>
+            <section class="menu-item">
+                <nav id="optionsNav">
+                    <a href="#">Configurações</a>
+                    <a href="index.html">&#8592;Sair</a>
+                </nav>
+            </section>        
+        </div>
+        <main id="mainContent"   >
+            <div class="card">
+                <div class="card-header"><h1>Passo 1: Cadastro Na vara da infancia</h1></div>
+                <div class="card-body"><p>Procure o Fórum ou a Vara da Infância e da Juventude da sua cidade ou região, levando os seguintes documentos*:</p>
+                   <p> 1) Cópias autenticadas: da Certidão de nascimento ou casamento, ou declaração relativa ao período de união estável;</p>
+                   <p> 2) Cópias da Cédula de identidade e da Inscrição no Cadastro de Pessoas Físicas (CPF);</p>
+                   <p> 3) Comprovante de renda e de residência;</p>
+                   <p>4) Atestados de sanidade física e mental;</p>
+                   <p>5) Certidão negativa de distribuição cível;</p>
+                   <p>6) Certidão de antecedentes criminais. </p></div>
+                <div class="card-footer"><p>Feito?<input type="checkbox" id="passo1" onclick="habilitar()" action=""></p></div>
+              </div>
+              <div class="card">
+                <div class="card-header"><h1>Passo 2: Participação em programa de preparação para adoção</h1></div>
+                <div class="card-body">A participação no programa é requisito legal, previsto no Estatuto da Criança e do Adolescente (ECA), para quem busca habilitação no cadastro à adoção. O programa pretende oferecer aos postulantes o efetivo conhecimento sobre a adoção, tanto do ponto de vista jurídico quanto psicossocial; fornecer informações que possam ajudar os postulantes a decidirem com mais segurança sobre a adoção; preparar os pretendentes para superar possíveis dificuldades que possam haver durante a convivência inicial com a criança/adolescente; orientar e estimular à adoção interracial, de crianças ou de adolescentes com deficiência, com doenças crônicas ou com necessidades específicas de saúde, e de grupos de irmãos.</div>
+                <div class="card-footer"><p>Feito?<input type="checkbox" id="passo2" onclick="habilitar()"></p></div>
+              </div>
+              <div class="card">
+                <div class="card-header"><h1>Passo 3: Avaliação da equipe interprofissional</h1></div>
+                <div class="card-body">É uma das fases mais importantes e esperadas pelos postulantes à adoção, que serão avaliados por uma equipe técnica multidisciplinar do Poder Judiciário. Nessa fase, objetiva-se conhecer as motivações e expectativas dos candidatos à adoção; analisar a realidade sociofamiliar; avaliar, por meio de uma criteriosa análise, se o postulante à adoção pode vir a receber criança/adolescente na condição de filho; identificar qual lugar ela ocupará na dinâmica familiar, bem como orientar os postulantes sobre o processo adotivo.</div>
+                <div class="card-footer"><p>Feito?<input type="checkbox" id="passo3" onclick="habilitar()"></p></div>
+              </div>
+              <div class="card">
+                <div class="card-header"><h1>Passo 4: Participação em programa de preparação para adoção</h1></div>
+                <div class="card-body">A participação no programa é requisito legal, previsto no Estatuto da Criança e do Adolescente (ECA), para quem busca habilitação no cadastro à adoção. O programa pretende oferecer aos postulantes o efetivo conhecimento sobre a adoção, tanto do ponto de vista jurídico quanto psicossocial; fornecer informações que possam ajudar os postulantes a decidirem com mais segurança sobre a adoção; preparar os pretendentes para superar possíveis dificuldades que possam haver durante a convivência inicial com a criança/adolescente; orientar e estimular à adoção interracial, de crianças ou de adolescentes com deficiência, com doenças crônicas ou com necessidades específicas de saúde, e de grupos de irmãos.</div>
+                <div class="card-footer"><p>Feito?<input type="checkbox" id="passo4" onclick="habilitar()"></p></div>
+              </div>
+              <div class="card">
+                <div class="card-header"><h1>Passo 5: Análise do requerimento pela autoridade judiciária</h1></div>
+                <div class="card-body">
+                    <p>A partir do estudo psicossocial, da certificação de participação em programa de preparação para adoção e do parecer do Ministério Público, o juiz proferirá sua decisão, deferindo ou não o pedido de habilitação à adoção.</p>
+                    <p>Caso seu nome não seja aprovado, busque saber os motivos. Estilo de vida incompatível com criação de uma criança ou razões equivocadas (para aplacar a solidão; para superar a perda de um ente querido; superar crise conjugal etc.) podem inviabilizar uma adoção. Você pode se adequar e começar o processo novamente.</p>
+                    <p>A habilitação do postulante à adoção é válida por três anos, podendo ser renovada pelo mesmo período. É muito importante que o pretendente mantenha sua habilitação válida, para evitar inativação do cadastro no sistema. Assim, quando faltarem 120 dias para a expiração o prazo de validade, é recomendável que o habilitado procure a Vara de Infância e Juventude responsável pelo seu processo e solicite a renovação.</p>
+                    <p>O prazo máximo para conclusão da habilitação à adoção será de 120 dias, prorrogável por igual período, mediante decisão fundamentada da autoridade judiciária.</p>
+                </div>
+                <div class="card-footer"><p>Feito?<input type="checkbox" id="passo5" onclick="habilitar()"></p></div>
+              </div>
+              <div class="card">
+                <div class="card-header"><h1>Passo 6: Ingresso no Sistema Nacional de Adoção e Acolhimento</h1></div>
+                <div class="card-body">Com o deferimento do pedido de habilitação à adoção, os dados do postulante são inseridos no sistema nacional, observando-se a ordem cronológica da decisão judicial.</div>
+                <div class="card-footer"><p>Feito?<input type="checkbox" id="passo6" onclick="habilitar()"></p></div>
+              </div>
+              <div class="card">
+                <div class="card-header"><h1>Passo 7: Ingresso no Sistema Nacional de Adoção e Acolhimento</h1></div>
+                <div class="card-body">
+                    <p>Quando se busca uma família para uma criança/adolescente cujo perfil corresponda ao definido pelo postulante, este será contatado pelo Poder Judiciário, respeitando-se a ordem de classificação no cadastro. Será apresentado o histórico de vida da criança/adolescente ao postulante e, se houver interesse, será permitida aproximação com ela/ele.</p>
+                    <p>Durante esse estágio de convivência monitorado pela Justiça e pela equipe técnica, é permitido visitar o abrigo onde ela/ele mora; dar pequenos passeios para que vocês se aproximem e se conheçam melhor.</p>
+                    <p>É importante manter os contatos atualizados, pois é por eles que o Judiciário entrará em contato para informar que há crianças ou adolescentes aptos para adoção dentro do perfil do pretendente. O sistema também fará comunicações por e-mail, caso seja cadastrado.</p>
+                </div>
+                <div class="card-footer"><p>Feito?<input type="checkbox" id="passo7" onclick="habilitar()"></p></div>
+              </div>
+              <div class="card">
+                <div class="card-header"><h1>Passo 8: O momento de construir novas relações</h1></div>
+                <div class="card-body">Caso a aproximação tenha sido bem-sucedida, o postulante iniciará o estágio de convivência. Nesse momento, a criança ou o adolescente passa a morar com a família, sendo acompanhados e orientados pela equipe técnica do Poder Judiciário. Esse período tem prazo máximo de 90 dias, prorrogável por igual período.</div>
+                <div class="card-footer"><p>Feito?<input type="checkbox" id="passo8" onclick="habilitar()"></p></div>
+              </div>
+              <div class="card">
+                <div class="card-header"><h1>Passo 9: Uma nova família</h1></div>
+                <div class="card-body">
+                    <p>Contado do dia seguinte à data do término do estágio de convivência, os pretendentes terão 15 dias para propor a ação de adoção. Caberá ao juiz verificar as condições de adaptação e vinculação socioafetiva da criança/adolescente e de toda a família. Sendo as condições favoráveis, o magistrado profere a sentença de adoção e determina a confecção do novo registro de nascimento, já com o sobrenome da nova família. Nesse momento, a criança/adolescente passa a ter todos os direitos de um filho.</p>
+                    <p>O prazo máximo para conclusão da ação de adoção será de 120 dias, prorrogáveis uma única vez por igual período, mediante decisão fundamentada da autoridade judiciária.</p>
+                </div>
+                <div class="card-footer"><p>Feito?<input type="checkbox" id="passo9" onclick="habilitar()"></p></div>
+              </div>
+        </main>
+    </div>
+</body>
+
+</html>

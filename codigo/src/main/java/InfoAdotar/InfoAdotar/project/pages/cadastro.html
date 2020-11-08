@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>meAdote - Cadastro</title>
+
+    <!--JQuery-->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <script src="../js/bootstrap.min.js"></script>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/pages/cadastro.css" />
+
+    <!--JavaScript-->
+    <script src="../js/util/util.js"></script>
+    <script src="../js/dal/dal.js"></script>
+    <script src="../js/controller/userController.js"></script>
+    <script src="../js/controller/faqController.js"></script>
+    <script src="../js/controller/passoController.js"></script>
+    <script src="../js/controller/userPassoController.js"></script>
+    <script src="../js/controller/comunidadeController.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/pages/cadastro.js"></script>
+
+</head>
+<script type="text/javascript">
+
+function addIdToPath(form_name, base_url){
+    var your_form = document.getElementById(form_name);
+	var id = your_form.elements.namedItem("id").value;
+	action_src = base_url + id;
+	your_form.action = action_src;
+}
+
+</script>
+
+<body>
+    <main>
+        <div class="logo-card">
+            <img src="../img//logo.png">
+            <h1>meAdote</h1>
+        </div>
+        <div id="loginCard">
+            <form id="loginForm " class="form--register"
+				action="http://localhost:6789/inserir" method="post"
+				id="form-add">
+                <div class="form-head-div">
+                    <h2>Cadastro</h2>
+                </div>
+               
+                
+                    
+                    <p>Nome:</p>
+                    <input id="cadastroNome" name="Nome" class="form-control" type="name" required>
+                    <p>Idade:</p>
+                    <input id="cadastroIdade" name="idade" class="form-control" type="number" required>
+                    <p>Renda:</p>
+                    <input id="cadastroRenda" name="renda" class="form-control" type="number" required>
+                    <p>Disponibilidade:</p>
+                    <input id="cadastroDisponibilidade" name="disponibilidade" class="form-control" type="number" required>
+                    <p>Email:</p>
+                    <input id="cadastroEmail" name="email" class="form-control" type="email" required>
+                    <p>sexo</p>
+				    <input id="cadastroSexo" class="input--register" type="text" name="sex" value="" placeholder="m"> 
+                    <p>Senha:</p>
+                    <input id="cadastroPassword" name="password" class="form-control" type="password" required>
+                    <p>Confirme Senha:</p>
+                    <input id="cadastroConfirmPassword" name="Confirmpassword" class="form-control" type="password" required>
+                   
+                
+                    <input type="submit" class="input--main__style input--button" id="btncadastrar" value="cadastrar" >
+                      
+			
+                
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>
