@@ -79,7 +79,7 @@ public class AdocaoService {
         } else {
             response.status(404); // 404 Not found
             adocaoDAO.close();
-            return "Produto " + id + " n„o encontrado.";
+            return "Produto " + id + " n√£o encontrado.";
         }
 
 	}
@@ -155,27 +155,34 @@ public class AdocaoService {
 
 	} 
 	public Object login(Request request , Response response) {
-		adocaoDAO.conectar();
-		response.header("Content-Type", "application/json");
-	    response.header("Content-Encoding", "UTF-8");
-		JSONArray allProds = new JSONArray();
-		String a[]= request.body().split("&");
-		String email1= a[0].split("=")[1];
-		String senha=a[1].split("=")[1];
-		String email= "";
-        for(int i =0 ; i<email1.length();i++) {
-        	if(email1.charAt(i)=='%' && email1.charAt(i+1)=='4' && email1.charAt(i+2)=='0') {
-        		email+='@';
-        		i++;i++;
-        	}else {
-        		email+=email1.charAt(i);
-        	}
-        }
-        Adocao login=adocaoDAO.getLogin(email, senha);
-        allProds.put(login.toJson());
-		adocaoDAO.close();
-		return allProds;
 		
+		adocaoDAO.conectar();
+		
+		String email= request.params(":email");
+		
+	
+		Adocao user = (Adocao) adocaoDAO.getLogin(email);
+		
+		response.header("Content-Type", "application/json");
+		response.header("Content-Encoding", "UTF-8");
+			
+		if (user != null) {
+			
+			adocaoDAO.close();
+			return user.toJson();
+		} else {
+			
+			response.status(404); // NOT FOUND
+			response.redirect("/notfound.html");
+			
+			adocaoDAO.close();
+			return null;
+		}
+		
+		
+		
+		
+	
 	}
 
 	
