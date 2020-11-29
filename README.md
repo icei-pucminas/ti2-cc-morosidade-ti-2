@@ -4,8 +4,9 @@ O objetivo central é desenvolver um site para cooperar na aceleração do proce
 
 Como objetivos específicos, podemos ressaltar:
 
- * Gerar uma comunidade que se ajuda no processo de adoção;
  * Proporcionar uma interface organizada para responder dúvidas e permitir que os usuários gerenciam seus processos de adoção.
+
+ * Auxílio no passo a passo da adoção, acompanhando de maneira detalhada.
 
 
 ## Alunos integrantes da equipe
@@ -17,8 +18,9 @@ Como objetivos específicos, podemos ressaltar:
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Max do Val Machado
+* Wladmir Cardoso Brandão
+* Sandro Jerônimo
 
 ## Instruções de utilização
 
