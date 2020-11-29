@@ -29,7 +29,7 @@ Item | Quem | Anotações |
 ## Ações e pendências
 | Feito (S/N)? | Item | Responsável | Data para solução |
 | ---- | ---- | ---- | ---- |
-| a| "o que fazer"| todos| 23/09/2020 |
+| s| "o que fazer"| todos| 23/09/2020 |
 
 ## Outras notas e informações
 N/A
