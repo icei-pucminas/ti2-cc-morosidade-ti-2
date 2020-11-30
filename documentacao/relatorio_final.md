@@ -25,16 +25,16 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 **1. Introdução**
 
 
-    1.1 Contextualização
+      1.1 Contextualização
     
  É fato que no Brasil ocorre uma demora no sistema de adoção. O processo de regularizar os documentos, entrar no CNA (Cadastro Nacional de Adoção) e entrar em contato com a criança leva tempo.
     
-    1.2 Problema
+      1.2 Problema
     
  O número de pretendentes representa nove vezes o número de crianças aptas para adoção, mas os perfis de preferência desses faz com que se torne mais difícil encontrar uma criança. Um exemplo, é a escolha de idades, onde 85% dos pretendentes preferem crianças com até 6 anos de idade.
  A solução criada deve afetar o nicho dos futuros pais, aqueles que pretendem adotar, estão na espera de uma adoção na fila do CNA e aqueles que já adotaram e impõem influência para outros pretendentes. O ambiente escolhido seria um site que, por ser mais dinâmico, permite o acesso por vários dispositivos, sendo favorável para a formação de comunidades.
 
-    1.3 Objetivo geral
+      1.3 Objetivo geral
 
  O objetivo central é desenvolver um site para cooperar na aceleração do processo de adoção. Os objetivos específicos seriam conscientizar os pretendentes sobre os perfis das crianças no Brasil e ajudá-los a passar pelo processo de adoção de forma mais organizada e explicativa. Com isso, é favorecida uma relação de cooperação entre sistema e o usuário.
 
@@ -44,7 +44,7 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 * Auxílio no passo a passo da adoção, acompanhando de maneira detalhada
 
 
-    	1.4 Justificativas
+      1.4 Justificativas
 	
   A motivação da nossa solução é ajudar mais de 4000 crianças a serem adotadas, permitindo que elas tenham suporte familiar ao longo de suas vidas. Os objetivos foram escolhidos para tentar conscientizar os pretendentes sobre as escolhas de perfis e consequentemente fazer com que aquelas crianças com fatores e características menos procuradas tenham maior chance de serem adotadas e também foram escolhidos para auxiliar os pretendentes a conseguir realizar a adoção de forma boa e organizada. 
 
