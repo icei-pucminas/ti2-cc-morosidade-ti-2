@@ -117,7 +117,19 @@ A Seguir, segue um exemplo de imagem adicionada ao documento.
 
 **4. Sistema desenvolvido**
 
-Faça aqui uma breve descrição do software e coloque as principais telas com uma explicação de como usar cada uma.
+O sistema é simples e fácil de ser usado, começando com a tela login ![Login](imgs/login.jpg "Login")
+
+aonde se tem a opção de realizar o login se ja tiver a conta ou realizar o cadastro ![cadastro](imgs/cadastro.jpg "cadastro")
+
+caso o usuário já tenha conta ele realizará o login sendo redirecionado para a pagina home, onde se encontra algumas notícias e dúvidas frequentes sobre o processo de adoção
+![home](imgs/home.jpg "home")
+
+Logo após o usuário poderá escolher para onde se redirecionará no site, para a tela Progresso ![progresso](imgs/progresso.jpg "progresso")
+
+Na qual tem o fluxo de passo a passo onde o usuário poderá acompanhar o seu processo de adoção de forma detalhada e organizada.
+Na tela de ChatBot o usuário poderá ter uma conversa com nosso bot para tirar dúvidas frequentes sobre o tema![chatbot](imgs/chatbot.jpg "chatbot")
+
+Caso o usuário deseje excluir sua conta ele também terá essa opção![exlucir](imgs/excluir.jpg "excluir")
 
 **5. Avaliação**
 
