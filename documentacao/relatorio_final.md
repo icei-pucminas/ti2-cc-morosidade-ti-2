@@ -216,7 +216,9 @@ Segundo o questionário o sistema atende bem as expectativas e contribui para a 
 **6. Conclusão**
   
 A realização desse trabalho é algo muito novo para todos, conseguimos concluir o esperado , e todos concordamos que crescemos muito tanto intelectualmente,tanto como pessoa , pois aprendemos muito com todos. Aprendemos a lidar não só com a sua própia dificuldade mas a dos outros também, com todo mundo se ajudando e crescendo junto!
+
 Observações pessoais:
+
 *Rafael:"Tive algumas dificuldades que foram superadas com a ajuda dos integrantes do grupo, estou muito satisfeito com o trabalho e com o que ele nos proporcionou."
 *Victor:"Durante o desenvolvimento do projeto eu adquiri muito conhecimento e cresci junto com meus colegas."
 *Gustavo:"Foi muito bom fazer esse trabalho, pois consegui entender um pouco mais sobre o assunto (adoção) e consegui resolver problemas em conjunto com o grupo."
