@@ -113,7 +113,7 @@ Apresente o modelo de dados. Defina o dicionário de dados com os respectivos fo
 Apresente a estrutura das tabelas de banco de dados no modelo Diagrama de Entidade-Relacionamento. 
 A Seguir, segue um exemplo de imagem adicionada ao documento.
 
-![Diagrama de Entidade Relacionamento](imgs/mer.png "Diagrama de Entidade Relacionamento")
+![Diagrama de Entidade Relacionamento](imgs/mer.jpg "Diagrama de Entidade Relacionamento")
 
 **4. Sistema desenvolvido**
 
