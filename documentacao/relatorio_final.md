@@ -15,8 +15,9 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade de Mi
 
 ---
 
-_**Resumo**. Escrever aqui o resumo. O resumo deve contextualizar rapidamente o trabalho, descrever seu objetivo e, ao final, 
-mostrar algum resultado relevante do trabalho (até 10 linhas)._
+O nosso trabalho consiste em resolver um determinado problema, que em nosso caso optamos pelo problema da adoção no Brasil. Dessa forma precisamos desenvolver um website do qual tenha como funcionalidade um banco de dados, um sistema inteligente, e um back end para integrar os mesmos. 
+Então, pensamos que como o uso do banco de dados será possível coletar informações de nossos usuários para saber o perfil de quem está interessado no processo de adoção, e para principalmente efetuar o cadastro e login em nosso site, foi usado também o banco de dados para determinar os passo a passo para o processo de adoção já feitos por cada usuário do sistema. 
+Para nosso sistema inteligente, pensamos como solução a utilização de um chatbot que tem como objetivo tirar as dúvidas no processo de adoção em geral de cada pessoa que entrar em contato com o chat bot.
 
 ---
 
@@ -106,7 +107,83 @@ e em que módulo será utilizado.
 	
 **3. Modelagem de dados**
 
-Apresente o modelo de dados. Defina o dicionário de dados com os respectivos formatos e significados.
+Usuário
+Descrição: Onde será cadastrado todos os usuários que quiserem saber mais sobre adoção.
+
+Tabela:
+ID: Onde armazenaremos o id de cada pessoa.
+Tipo: Integer
+Papel da análise: variável explicativa
+
+Nome: Armazena o nome de cada usuário cadastrado
+Tipo: String
+Papel da análise: variável explicativa
+
+Idade: Armazena a idade de cada usuário cadastrado para que possamos identificar se é possível a pessoa adotar alguém.
+Tipo: Integer
+Papel da análise: variável explicativa
+
+Renda: Armazena a renda de cada usuário cadastrado para que possamos identificar se a pessoa cadastrada tem renda o suficiente para cuidar da criança.
+Tipo: Integer
+Papel da análise: Resposta
+
+Sexo: Armazena o sexo de cada usuário cadastrado.
+Tipo: Char
+Papel da análise: variável explicativa
+
+Disponibilidade: Armazena a disponibilidade que a pessoa tem para que seja possível cuidar da criança.
+Tipo: Integer
+Papel da análise: Resposta
+
+E-mail: Armazena o e-mail para que possamos comunicar com cada pessoa cadastrada no sistema.
+Tipo: String
+Papel da análise: variável explicativa
+
+
+
+Tarefas
+Descrição: Onde será descrito cada tarefa que o usuário deverá fazer para conseguir uma adoção.
+
+Tabela:
+ID: Onde armazenaremos o id de cada pessoa.(fk de usuarios)
+Tipo: Integer
+Papel da análise: Resposta
+
+Passo1: Armazena o Cadastro na vara da infância.
+Tipo: boolean
+Papel da análise: Resposta
+
+Passo2: Armazena a participação em programa de preparação para adoção.
+Tipo: boolean
+Papel da análise: Resposta
+
+Passo3: Armazena a Avaliação da equipe interprofissional.
+Tipo: boolean
+Papel da análise: Resposta
+
+Passo4: Armazena a Participação em programa de preparação para adoção.
+Tipo: boolean
+Papel da análise: Resposta
+
+Passo5: Armazena o Análise do requerimento pela autoridade jurídica.
+Tipo: boolean
+Papel da análise: Resposta
+
+Passo6: Armazena o Ingresso no Sistema Nacional de Adoção e Acolhimento.
+Tipo: boolean
+Papel da análise: Resposta
+
+Passo7: Armazena o Ingresso no Sistema Nacional de Adoção e Acolhimento.
+Tipo: boolean
+Papel da análise: Resposta
+
+Passo8: Armazena o Momento de Construir novas relações.
+Tipo: boolean
+Papel da análise: Resposta
+
+Passo9: Armazena o cadastro de uma nova família.
+Tipo: boolean
+Papel da análise: Resposta
 
     3.1. Diagrama de Entidade-Relacionamento
 
