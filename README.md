@@ -12,7 +12,6 @@ Como objetivos específicos, podemos ressaltar:
 ## Alunos integrantes da equipe
 
 * Gustavo Rafá Pinheiro da Silva
-* Pedro Costa Calazans
 * Rafael Pinto Mesquita
 * Victor Hugo de Sa Parreiras
 
