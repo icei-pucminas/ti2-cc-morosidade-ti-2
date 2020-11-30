@@ -93,6 +93,10 @@ ChatBot:
 * Microsoft Azure
 
 
+![Arquitetura do Sistema](imgs/arqSistema.png "Arquitetura do Sistema")
+
+
+
     2.3. Serviços inteligentes
 
 Descreva o mecanismo de inteligência que será utilizado no seu sistema. Utilize a modelagem baseada em agente
@@ -109,7 +113,7 @@ Apresente o modelo de dados. Defina o dicionário de dados com os respectivos fo
 Apresente a estrutura das tabelas de banco de dados no modelo Diagrama de Entidade-Relacionamento. 
 A Seguir, segue um exemplo de imagem adicionada ao documento.
 
-![Diagrama de Entidade Relacionamento de Exemplo](imagens/er_diagram.png "Diagrama de Entidade Relacionamento de Exemplo")
+![Diagrama de Entidade Relacionamento](imgs/mer.png "Diagrama de Entidade Relacionamento")
 
 **4. Sistema desenvolvido**
 
