@@ -5,7 +5,7 @@
 
 **Victor Hugo de Sá Parreiras, victorsa6@hotmail.com**
 
-**Gustavo Rafá Pinheiro da Silva, **
+**Gustavo Rafá Pinheiro da Silva, gustavorafa128@gmail.com**
 
 ---
 
