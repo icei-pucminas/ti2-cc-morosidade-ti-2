@@ -72,11 +72,26 @@ de acordo com as definições do modelo de negócio.
 
     2.2. Tecnologias
 
-Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou seja implementar a sua solução. 
-Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, 
-IDEs de desenvolvimento, e ferramentas.  Apresente também uma figura explicando como as tecnologias estão 
-relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até 
-retornar uma resposta ao usuário. 
+IDEs:
+* Eclipse IDE
+
+Front-end:
+* HTML5
+* CSS
+* JavaScript
+* Bootstrap
+
+Back-end:
+* Java
+* Spark
+* Maven
+
+Base de dados: 
+* PostgreSQL
+
+ChatBot: 
+* Microsoft Azure
+
 
     2.3. Serviços inteligentes
 
