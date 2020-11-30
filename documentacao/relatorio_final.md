@@ -133,8 +133,7 @@ Caso o usuário deseje excluir sua conta ele também terá essa opção![exlucir
 
 **5. Avaliação**
 
-Faça aqui sobre a avaliação do software. Indique se ele atendeu as expectativas e ele é viável. 
-Para não ficar subjetivo, o ideal é fazer um questionário e pedir ao usuário do processo que faça a avaliação.
+Segundo o questionário o sistema atende bem as expectativas e contribui para a realização da adoção.Segue algumas avaliações:
 
 **6. Conclusão**
 
