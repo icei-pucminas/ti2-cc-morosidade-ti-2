@@ -3,7 +3,7 @@
 
 **Rafael Pinto Mesquita, reifel.mesquita@gmail.com**
 
-**Victor Hugo de Sá Parreiras, victorsa6@hotmail.com **
+**Victor Hugo de Sá Parreiras, victorsa6@hotmail.com**
 
 **Gustavo Rafá Pinheiro da Silva, **
 
@@ -58,11 +58,16 @@ Enumere os requisitos funcionais previstos para a sua aplicação.
 Use a tabela abaixo para enumerá-lo.  Esses requisitos devem estar 
 de acordo com as definições do modelo de negócio.
 
-| No.           | Descrição                       | Prioridade |
-| ------------- |:-------------------------------:| ----------:|
-| {número       | Descrição resumida do requisito | {Alta      |
-| sequencial    |                                 |  média     |
-| identificador |                                 |  ou baixa  | 
+| No.   | Descrição                                                                                               | Prioridade  |
+| ----- |:-------------------------------------------------------------------------------------------------------:| -----------:|
+| RF-01 |                     O usuário deve conseguir criar uma conta e logar no sistema.                        |    Alta     |
+| RF-02 |                         O usuário deve conseguir utilizar o nosso chatbot (FAQ)                         |    Alta     |
+| RF-03 |                    O usuário deve ter uma checklist para gerenciar seu passos na adoção                 |    Alta     | 
+| RF-04 |    O usuário deve ter um suporte visual (barra de progresso) para representar seu progresso na adoção   |    Alta     | 
+| RF-05 |        O sistema deve possuir uma integração com backend, sincronizando o site e o banco de dados       |    Alta     | 
+| RF-06 |                        O sistema deve possuir um banco de dados para login.                             |    Alta     |  
+| RF-07 | O sistema deve possuir um banco de dados que regula os passos que foram já realizados por cada cliente. |    Alta     | 
+| RF-08 |    O usuário deve ter acesso a textos de conscientização sobre a situação atual da adoção no Brasil.    |    Média    | 
 
 
     2.2. Tecnologias
