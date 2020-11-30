@@ -23,5 +23,5 @@ Como objetivos específicos, podemos ressaltar:
 * Sandro Jerônimo
 
 ## Instruções de utilização
-
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
+Segue o link do nosso sistema hospedado na plataforma heroku, a utilização é bem simples.
+https://meadote-ti2.herokuapp.com/
