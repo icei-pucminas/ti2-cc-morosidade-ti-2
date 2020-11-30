@@ -1,11 +1,11 @@
-# TITULO DO PROJETO
+# MeAdote-TI2
 
 
-**Nome completo do Aluno 1, email do aluno 1**
+**Rafael Pinto Mesquita, reifel.mesquita@gmail.com**
 
-**Nome completo do Aluno 2, email do aluno 2**
+**Victor Hugo de Sá Parreiras, victorsa6@hotmail.com **
 
-**Nome completo do Aluno 3, email do aluno 3**
+**Gustavo Rafá Pinheiro da Silva, **
 
 ---
 
@@ -24,32 +24,30 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 **1. Introdução**
 
-A introdução deve apresentar de dois ou quatro parágrafos de contextualização do trabalho. 
-
-Na **contextualização**, o aluno deve dizer do que se trata o trabalho, em que área ou contexto se insere. 
-A **contextualização** deve ser desenvolvida de algo mais genérico para algo mais específico. 
-A citação de pesquisas quantitativas é bem aceita aqui (corretamente referenciadas).
-
-Em seguida o aluno deve caminhar a contextualização para descrever o **problema** que o artigo trata. 
-O **problema** pode ser algo vivido em uma empresa específica.
-
 
     1.1 Contextualização
+    
+ É fato que no Brasil ocorre uma demora no sistema de adoção. O processo de regularizar os documentos, entrar no CNA (Cadastro Nacional de Adoção) e entrar em contato com a criança leva tempo.
+    
     1.2 Problema
+    
+ O número de pretendentes representa nove vezes o número de crianças aptas para adoção, mas os perfis de preferência desses faz com que se torne mais difícil encontrar uma criança. Um exemplo, é a escolha de idades, onde 85% dos pretendentes preferem crianças com até 6 anos de idade.
+ A solução criada deve afetar o nicho dos futuros pais, aqueles que pretendem adotar, estão na espera de uma adoção na fila do CNA e aqueles que já adotaram e impõem influência para outros pretendentes. O ambiente escolhido seria um site que, por ser mais dinâmico, permite o acesso por vários dispositivos, sendo favorável para a formação de comunidades.
+
     1.3 Objetivo geral
 
-O aluno deve escrever um pequeno parágrafo ou frase com o **objetivo geral** do trabalho. 
-O objetivo deve ser bem direto, específico e definido com verbos de ação (elaborar, propor, ava-liar, comparar etc.).
+ O objetivo central é desenvolver um site para cooperar na aceleração do processo de adoção. Os objetivos específicos seriam conscientizar os pretendentes sobre os perfis das crianças no Brasil e ajudá-los a passar pelo processo de adoção de forma mais organizada e explicativa. Com isso, é favorecida uma relação de cooperação entre sistema e o usuário.
 
         1.3.1 Objetivos específicos
 
-Apresente também alguns (pelo menos 2) **objetivos específicos** depende
-ndo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
+* Proporcionar uma interface organizada para responder dúvidas e permitir que os usuários gerenciam seus processos de adoção.
+* Auxílio no passo a passo da adoção, acompanhando de maneira detalhada
 
-    1.4 Justificativas
 
-Mostre também as **justificativas** para o 
-desenvolvimento do seu trabalho e caso deseje, desta-que alguma contribuição do trabalho.
+    	1.4 Justificativas
+	
+  A motivação da nossa solução é ajudar mais de 4000 crianças a serem adotadas, permitindo que elas tenham suporte familiar ao longo de suas vidas. Os objetivos foram escolhidos para tentar conscientizar os pretendentes sobre as escolhas de perfis e consequentemente fazer com que aquelas crianças com fatores e características menos procuradas tenham maior chance de serem adotadas e também foram escolhidos para auxiliar os pretendentes a conseguir realizar a adoção de forma boa e organizada. 
+
 
 
 **2. Projeto da Solução**
@@ -65,6 +63,7 @@ de acordo com as definições do modelo de negócio.
 | {número       | Descrição resumida do requisito | {Alta      |
 | sequencial    |                                 |  média     |
 | identificador |                                 |  ou baixa  | 
+
 
     2.2. Tecnologias
 
